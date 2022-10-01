@@ -1,6 +1,3 @@
-body {
-    background-color: #2f3e46;
-}
 .white{
     color: white;
 }
@@ -11,6 +8,4 @@ body {
 .font{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.margin-negative {
-    margin-top: -60px;
-}
+

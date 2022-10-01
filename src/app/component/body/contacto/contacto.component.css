@@ -60,9 +60,9 @@
 }
 
 .contact .contact .send:hover {
-	background-color: #fc4311;
-	border: #fc4311 solid 1px;
+	background-color: gray;
+	border: gray solid 1px;
 	color: #fff;
-    border-radius: 25px;
+    border-radius: 10px;
     transition: ease-in all 0.5s;
 }
