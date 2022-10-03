@@ -1,0 +1,48 @@
+{
+    "banner": "./assets/img/Quantum_computer-1080x675.jpg",
+    "perfil": "./assets/img/100k-ai-faces.jpg",
+    "name": "Alvaro Negrete Corrales",
+    "introduction": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reprehenderit tempore cum magni velit vitae repudiandae ut sunt eos reiciendis fugiat omnis exercitationem in soluta cumque nesciunt tenetur enim, consectetur ipsam. Qui consequuntur molestiae perspiciatis unde nam est a dolores laborum tenetur enim ipsa alias eius dolorem, officia fugiat nisi!",
+    "experiencia": [{
+            "thumbnail": "./assets/img/Google.jpg",
+            "empresa": "Lorem ipsum dolor sit.",
+            "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!"
+        },
+        {
+            "thumbnail": "./assets/img/IBM-Color.jpg",
+            "empresa": "Lorem ipsum dolor sit.",
+            "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!"  
+        },
+        {
+            "thumbnail": "./assets/img/Microsoft.jpg",
+            "empresa": "Lorem ipsum dolor sit.",
+            "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!"  
+        },
+        {
+            "thumbnail": "./assets/img/logo-twitter.jpg",
+            "empresa": "Lorem ipsum dolor sit.",
+            "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!"  
+        }
+    ],
+    "educacion": [{
+            "thumbnail": "./assets/img/Escuela-primaria-87262687.jpg",
+            "institucion": "Primaria.",
+            "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!"
+        },
+        {
+            "thumbnail": "./assets/img/escuela-secundaria.jpg",
+            "institucion": "Secundaria",
+            "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!"    
+        },
+        {
+            "thumbnail": "./assets/img/logo-de-universidad-online.jpg",
+            "institucion": "Universidad",
+            "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!"
+        },
+        {
+            "thumbnail": "./assets/img/Argentina Programa.jpg",
+            "institucion": "Curso",
+            "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!"
+        }
+    ]
+}

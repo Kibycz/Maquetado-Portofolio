@@ -1,7 +1,7 @@
 <div class="container text-center margin-negative">
     <div class="row mt-3">
         <div class="col-md-3">
-            <img src="./CSS/100k-ai-faces.jpg" class="rounded float-start img-fluid" alt="Foto Perfil">
+            <img [src]="acercaDe.perfil" class="rounded float-start img-fluid" alt="Foto Perfil">
         </div>
         <div class="col-md-9 py-5">
             <div class="text-start form" id="Acerca _de">
@@ -18,8 +18,8 @@
                 </div>
             </div>
             <div class="pt-4">
-                <h1>Alvaro Negrete Corrales</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reprehenderit tempore cum magni velit vitae repudiandae ut sunt eos reiciendis fugiat omnis exercitationem in soluta cumque nesciunt tenetur enim, consectetur ipsam. Qui consequuntur molestiae perspiciatis unde nam est a dolores laborum tenetur enim ipsa alias eius dolorem, officia fugiat nisi!</p>
+                <h1>{{acercaDe.name}}</h1>
+                <p>{{acercaDe.introduction}}</p>
             </div>
         </div>            
     </div>

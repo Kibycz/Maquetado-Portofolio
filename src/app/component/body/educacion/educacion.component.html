@@ -14,36 +14,12 @@
             </div>
         </div>
         <ul class="white">
-            <li class="row my-5 rounded" style="background-color: #354f52;">
+            <li *ngFor="let educacion of educacionList" class="row my-5 rounded" style="background-color: #354f52;">
                 <div class="col-md-10 ps-5">
-                  <h4 class="pt-3">Lorem ipsum dolor sit.</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <h4 class="pt-3">{{educacion.institucion}}</h4>
+                  <p>{{educacion.detalles}}</p>
                 </div>
-                <img src="./CSS/Escuela-primaria-87262687.jpg" class="img-thumbnail col-md-2" alt="Escuela Primaria">
-            </li>
-            <li class="row my-5 rounded" style="background-color: #354f52;">
-                <div class="col-md-10 ps-5">
-                  <h4 class="pt-3">Lorem ipsum dolor sit.</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!</p>
-                </div>
-                <img src="./CSS/escuela-secundaria.jpg" class="img-thumbnail col-md-2" alt="Escuela Secundaria">
-            </li>
-            <li class="row my-5 rounded" style="background-color: #354f52;">
-                <div class="col-md-10 ps-5">
-                  <h4 class="pt-3">Lorem ipsum dolor sit.</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!</p>
-                </div>
-                <img src="./CSS/logo-de-universidad-online.jpg" class="img-thumbnail col-md-2" alt="Universidad">
-            </li>
-            <li class="row my-5 rounded" style="background-color: #354f52;">
-                <div class="col-md-10 ps-5">
-                  <h4 class="pt-3">Lorem ipsum dolor sit.</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quibusdam!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur</p>
-                </div>
-                <img src="./CSS/Argentina Programa.jpg" class="img-thumbnail col-md-2" alt="Argentina Programa">
+                <img [src]="educacion.thumbnail" class="img-thumbnail col-md-2" alt="Escuela Primaria">
             </li>
         </ul>
     </div>
