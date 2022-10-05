@@ -44,5 +44,24 @@
             "institucion": "Curso",
             "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, est!"
         }
+    ],
+    "proyectos": [{
+        "titulo": "Tecnología en Desarrollo de Software",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ullam quae quo. Sint sit aliquam deserunt similique sunt a, quod quidem asperiores atque dicta? Quae cum deserunt praesentium! Molestiae, nisi?",
+        "imagen": "./assets/img/tecsoftware.jpeg",
+        "alt": "Proyecto Tecsoftware"
+    },
+    {
+        "titulo": "Proyecto Agile Development",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ullam quae quo. Sint sit aliquam deserunt similique sunt a, quod quidem asperiores atque dicta? Quae cum deserunt praesentium! Molestiae, nisi?",
+        "imagen": "./assets/img/desarrollo-de-software-1024x582.jpg",
+        "alt": "Proyecto Agile Development"
+    },
+    {
+        "titulo": "Curso Argentina Programa",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ullam quae quo. Sint sit aliquam deserunt similique sunt a, quod quidem asperiores atque dicta? Quae cum deserunt praesentium! Molestiae, nisi?",
+        "imagen": "./assets/img/banner-ok-argentina-programa.jpg",
+        "alt": "Logo Argentina Programa"
+    }
     ]
 }

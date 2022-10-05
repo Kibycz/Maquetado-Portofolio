@@ -9,6 +9,10 @@
                         <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
                     </svg>
                 </button>
+            </div>
+        </div>
+        <div *ngFor="let proyecto of proyectoList">
+            <div class="boton">
                 <button type="button" class="btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
                         <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
@@ -16,20 +20,17 @@
                     </svg>
                 </button>
             </div>
+            <div class="row white">
+                <div class="col-md-6 px-0">
+                    <img [src]="proyecto.imagen" class="img-fluid" alt="{{proyecto.alt}}">
+                </div>
+                <div class="col-md-6 p-5" style="background-color: #354f52;">
+                    <h4>{{proyecto.titulo}}</h4>
+                    <p>{{proyecto.descripcion}}</p>
+                </div>
+            </div>
+            <hr>
         </div>
-        <div class="row white">
-            <div class="col-md-6 px-0"><img src="./assets/img/tecsoftware.jpeg" class="img-fluid" alt="Proyecto Tecsoftware"></div>
-            <div class="col-md-6 p-5" style="background-color: #354f52;"><h4>Tecnología en Desarrollo de Software</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ullam quae quo. Sint sit aliquam deserunt similique sunt a, quod quidem asperiores atque dicta? Quae cum deserunt praesentium! Molestiae, nisi?</p></div>
-        </div>
-        <hr>
-        <div class="row white">
-            <div class="col-md-6 p-5" style="background-color: #354f52;"><h4>Proyecto Agile Development</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ullam quae quo. Sint sit aliquam deserunt similique sunt a, quod quidem asperiores atque dicta? Quae cum deserunt praesentium! Molestiae, nisi?</p></div>
-            <div class="col-md-6 px-0"><img src="./assets/img/desarrollo-de-software-1024x582.jpg" class="img-fluid" alt="Proyecto Desarrollo de Software"></div>
-        </div>
-        <hr>
-        <div class="row white">
-            <div class="col-md-6 px-0"><img src="./assets/img/banner-ok-argentina-programa.jpg" class="img-fluid" alt="Proyecto Argentina Programa"></div>
-            <div class="col-md-6 p-5" style="background-color: #354f52;"><h4>Curso Argentina Programa</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ullam quae quo. Sint sit aliquam deserunt similique sunt a, quod quidem asperiores atque dicta? Quae cum deserunt praesentium! Molestiae, nisi?</p></div>
-        </div>
+        
     </div>
 </div>
