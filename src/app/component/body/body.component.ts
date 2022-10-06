@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Data } from '@angular/router';
 import { Chart } from 'chart.js';
+import { PorfolioService } from 'src/app/sevice/porfolio.service';
 
 @Component({
   selector: 'app-body',
@@ -8,9 +10,46 @@ import { Chart } from 'chart.js';
 })
 export class BodyComponent implements OnInit {
 
-  constructor() { }
+  data: Data[] = [];
+
+  constructor( private datosPorfolio:PorfolioService) { }
 
   ngOnInit(): void {
+  }
+
+  editAcercaDe() {
+    console.log("Acerca de mí!");
+  }
+
+  educacion() {
+    console.log("Educación");
+  }
+
+  experiencia() {
+    console.log("Experiencia");
+  }
+
+  habilidades() {
+    console.log("Habilidades");
+  }
+
+  proyectos() {
+    console.log("Proyectos")
+  }
+
+  deleteProyecto(data:Data) {
+    console.log(data)
+    this.datosPorfolio.deleteProyecto(data).subscribe(data => (
+      this.proyectos
+    ))
+  }
+
+  deleteExperiencia(data:Data) {
+    console.log(data);
+  }
+
+  deleteEducacion(data:Data) {
+    console.log(data);
   }
 
 }

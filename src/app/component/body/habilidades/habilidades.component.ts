@@ -1,4 +1,4 @@
-import { Component, OnInit, setTestabilityGetter } from '@angular/core';
+import { Component, OnInit, setTestabilityGetter, Output, EventEmitter } from '@angular/core';
 import { Chart } from 'chart.js';
 
 @Component({
@@ -7,6 +7,7 @@ import { Chart } from 'chart.js';
   styleUrls: ['./habilidades.component.css']
 })
 export class HabilidadesComponent implements OnInit {
+  @Output() btnClick = new EventEmitter()
   canvas: any;
   ctx:any;
 
@@ -14,6 +15,10 @@ export class HabilidadesComponent implements OnInit {
 
   ngOnInit(): void {
     this.setBar();
+  }
+
+  onClick() {
+    this.btnClick.emit();
   }
 
   setBar() {

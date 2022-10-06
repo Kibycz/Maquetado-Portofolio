@@ -1,6 +1,6 @@
 .boton {
     position: relative;
     color: black;
-    justify-content: end;
+    justify-content: flex-end;
     
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { PorfolioService } from 'src/app/sevice/porfolio.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { PorfolioService } from 'src/app/sevice/porfolio.service';
   styleUrls: ['./acerca-de.component.css']
 })
 export class AcercaDeComponent implements OnInit {
+  @Output() btnClick = new EventEmitter()
   acercaDe: any;
   constructor(private datosPorfolio:PorfolioService) { }
 
@@ -15,6 +16,10 @@ export class AcercaDeComponent implements OnInit {
       console.log(data);
       this.acercaDe=data;
     })
+  }
+
+  onclick() {
+    this.btnClick.emit();
   }
 
 }
