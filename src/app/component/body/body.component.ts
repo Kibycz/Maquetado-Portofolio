@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Data } from '@angular/router';
 import { Chart } from 'chart.js';
-import { PorfolioService } from 'src/app/sevice/porfolio.service';
+import { PorfolioService } from '../../sevice/porfolio.service';
 
 @Component({
   selector: 'app-body',
@@ -37,10 +37,12 @@ export class BodyComponent implements OnInit {
     console.log("Proyectos")
   }
 
-  deleteProyecto(data:Data) {
+  deleteProyecto(data:Data){
     console.log(data)
-    this.datosPorfolio.deleteProyecto(data).subscribe(data => (
-      this.proyectos
+    this.datosPorfolio.deleteProyecto(data).subscribe(() => (
+      this.data = this.data.filter( (t) => {
+        return t.id != data.id
+      })
     ))
   }
 

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Data } from '@angular/router';
-import { PorfolioService } from 'src/app/sevice/porfolio.service';
+import { PorfolioService } from '../../../sevice/porfolio.service';
 
 @Component({
   selector: 'app-educacion',

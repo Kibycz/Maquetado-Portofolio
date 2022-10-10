@@ -15,6 +15,6 @@ export class PorfolioService {
   }
 
   deleteProyecto(data:Data): Observable<Data>{
-    return this.http.delete('./assets/Data/data.json')
+    return this.http.delete<Data>('./assets/Data/data.json')
   }
 }

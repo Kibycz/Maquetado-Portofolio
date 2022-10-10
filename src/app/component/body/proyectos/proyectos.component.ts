@@ -1,6 +1,6 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output,Input, EventEmitter } from '@angular/core';
 import { Data } from '@angular/router';
-import { PorfolioService } from 'src/app/sevice/porfolio.service';
+import { PorfolioService } from '../../../sevice/porfolio.service';
 
 @Component({
   selector: 'app-proyectos',
@@ -8,7 +8,6 @@ import { PorfolioService } from 'src/app/sevice/porfolio.service';
   styleUrls: ['./proyectos.component.css']
 })
 export class ProyectosComponent implements OnInit {
-  
   @Output() btnClick = new EventEmitter()
   @Output() onDeleteData: EventEmitter<Data> = new EventEmitter()
   proyectoList: any;

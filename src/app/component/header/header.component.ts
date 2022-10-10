@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PorfolioService } from 'src/app/sevice/porfolio.service';
+import { PorfolioService } from '../../sevice/porfolio.service';
 
 @Component({
   selector: 'app-header',

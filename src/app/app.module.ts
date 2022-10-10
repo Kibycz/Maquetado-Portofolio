@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import {ChartComponent} from 'chart.js';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +16,7 @@ import { EducacionComponent } from './component/body/educacion/educacion.compone
 import { HabilidadesComponent } from './component/body/habilidades/habilidades.component';
 import { ProyectosComponent } from './component/body/proyectos/proyectos.component';
 import { ContactoComponent } from './component/body/contacto/contacto.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { ContactoComponent } from './component/body/contacto/contacto.component'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
