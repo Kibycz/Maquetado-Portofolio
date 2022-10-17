@@ -17,6 +17,8 @@ import { HabilidadesComponent } from './component/body/habilidades/habilidades.c
 import { ProyectosComponent } from './component/body/proyectos/proyectos.component';
 import { ContactoComponent } from './component/body/contacto/contacto.component';
 import { from } from 'rxjs';
+import { HardComponent } from './component/body/habilidades/hard/hard.component';
+import { SoftComponent } from './component/body/habilidades/soft/soft.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { from } from 'rxjs';
     EducacionComponent,
     HabilidadesComponent,
     ProyectosComponent,
-    ContactoComponent
+    ContactoComponent,
+    HardComponent,
+    SoftComponent
   ],
   imports: [
     BrowserModule,

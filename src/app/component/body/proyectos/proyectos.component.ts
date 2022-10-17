@@ -25,7 +25,6 @@ export class ProyectosComponent implements OnInit {
   }
   
   onDelete(data:Data) {
-    console.log(data)
-    this.onDeleteData.emit(data);
+    console.log(data);
   }
 }
