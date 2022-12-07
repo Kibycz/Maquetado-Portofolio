@@ -1,5 +1,6 @@
 import { Component, OnInit, setTestabilityGetter, Output, EventEmitter } from '@angular/core';
-import { Chart } from 'chart.js';
+import { Data } from '@angular/router';
+import { PorfolioService } from '../../../sevice/porfolio.service';
 
 @Component({
   selector: 'app-habilidades',
@@ -8,12 +9,15 @@ import { Chart } from 'chart.js';
 })
 export class HabilidadesComponent implements OnInit {
   @Output() btnClick = new EventEmitter()
-  
+  habilidadesList: any;
 
-  constructor() { }
+  constructor(private datosPorfolio: PorfolioService) { }
 
   ngOnInit(): void {
-    
+    this.datosPorfolio.obtenerDatos().subscribe(data =>{
+      console.log(data);
+      this.habilidadesList=data.habilidades;
+    })
   }
 
   onClick() {
