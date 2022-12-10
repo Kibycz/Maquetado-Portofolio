@@ -19,6 +19,9 @@ import { ContactoComponent } from './component/body/contacto/contacto.component'
 import { from } from 'rxjs';
 import { HardComponent } from './component/body/habilidades/hard/hard.component';
 import { SoftComponent } from './component/body/habilidades/soft/soft.component';
+import { PortfolioComponent } from './component/portfolio/portfolio.component';
+import { LoginComponent } from './component/login/login.component';
+import { PorfolioService } from './sevice/porfolio.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,9 @@ import { SoftComponent } from './component/body/habilidades/soft/soft.component'
     ProyectosComponent,
     ContactoComponent,
     HardComponent,
-    SoftComponent
+    SoftComponent,
+    PortfolioComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,7 @@ import { SoftComponent } from './component/body/habilidades/soft/soft.component'
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [PorfolioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

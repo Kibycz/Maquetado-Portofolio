@@ -7,7 +7,7 @@
       <div class="collapse navbar-collapse form" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-            <a class="nav-link active" href="#Acerca _de">Acerca de</a>
+            <a class="nav-link active" href="#Acerca _de">Acerca de mí</a>
             <a class="nav-link active" href="#Experiencia">Experiencia</a>
             <a class="nav-link active" href="#Educacion">Educación</a>
             <a class="nav-link active" href="#H&S_Skills">Habilidades</a>
@@ -15,42 +15,11 @@
             <a class="nav-link active" href="#contact">Contácteme</a>
           </div>
           <div class="dropdown pe-5">
-              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                    Log in
-              </button>
-              <form [formGroup]="form" (ngSubmit)="onEnviar($event)" class="dropdown-menu p-4">
-                <div class="mb-3">
-                  <label for="exampleDropdownFormEmail2" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com" formControlName="email">
-                </div>
-                <div *ngIf="Mail?.errors  && Mail?.touched">    
-                  <p *ngIf="Mail?.hasError('required')" class="error">
-                      El email es requerido.
-                  </p>
-                  <p *ngIf="Mail?.hasError('email')" class="error">
-                      El formato del email debe ser válido.
-                    </p>
-                </div>
-                <div class="mb-3">
-                  <label for="exampleDropdownFormPassword2" class="form-label">Clave</label>
-                  <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password"
-                  formControlName="password" [class.border-danger]="MailValid">
-                </div>
-                <div *ngIf="Password?.errors  && Password?.touched">
-                  <p *ngIf="Password?.hasError('required')" class="error">
-                    El password es requerido.
-                  </p>
-                </div>
-                <div class="mb-3">
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                    <label class="form-check-label" for="dropdownCheck2">
-                          Recordar
-                    </label>
-                </div>
-                </div>
-                  <button type="submit" class="btn btn-primary">Ingresar</button>
-              </form>
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-primary" type="button">Log in</button>
+              <button class="btn btn-primary" type="button">Logout</button>
+            </div>
+              
           </div>
        </div>
   </div>
